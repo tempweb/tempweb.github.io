@@ -1,176 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>NALANDA OPEN UNIVERSITY</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap-theme.css">
-	<link rel="stylesheet" type="text/css" href="css1/style.css">
+  <title>NALANDA OPEN UNIVERSITY</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css1/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <div class="header stickTop">
-    <div class="logo form-control">
-      <img src="images/logo.JPG" id="logo"><br>
-      <h2>NALANDA OPEN<br><span>UNIVERSITY</span></h2>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">NALANDA OPEN UNIVERSITY</a>
     </div>
-    <div class="links">
-      <table class="table">
-      <tr>
-      <td><ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="schools.html">Schools</a></li>
-          <li><a href="admission.html">Admission</a></li>
-          <li><a href="examination.html">Examination</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><input type="search" name="search" placeholder="Search Here!!" id="search"></li>
-          <li>&nbsp;<a href="#"><input type="image" name="submit" value="" src="images/search.png" placeholder="SEARCH" size="20"></a></li>
-        </ul>
-      </td>
-      </tr>
-      </table>
-      <br><br>
-      <table id="l2">
-      <tr>
-      <th><ul>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Students Corner<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="students.html">Notices</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="examination.html">Examination</a></li>
+            <li><a href="results.html">Results</a></li>
+          </ul>
+        </li>
         <li><a href="announcements.html">Announcements</a></li>
-        <li><a href="students.html">Students</a></li>
-        <li><a href="results.html">Exam Results</a></li>
         <li><a href="tenders.html">Tenders</a></li>
-      </ul></th>
-      </tr>
-      </table>&nbsp;
-      <div class="social">
-        <a href="#"><i class="fa fa-facebook-official" style="font-size:24px"></i></a>&nbsp;&nbsp;&nbsp;
-        <a href="#"><i class="fa fa-twitter" style="font-size:24px;color: white;"></i></a>&nbsp;&nbsp;&nbsp;
-        <a href="#"><i class="fa fa-instagram" style="font-size:24px"></i></a>&nbsp;&nbsp;&nbsp;
-        <a href="#"><i class="fa fa-youtube" style="font-size:24px"></i></a>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="images/pic1.jpeg" alt="" style="width:900px;height: 400px;margin: auto;">
+        <div class="carousel-caption">
+          <h3>Caption One</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/pic2.jpeg" alt="" style="width:900px;height: 400px;margin: auto;">
+        <div class="carousel-caption">
+          <h3>Caption Two</h3>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="images/img2.jpg" alt="" style="width:900px;height: 400px;margin: auto;">
+        <div class="carousel-caption">
+          <h3>Caption Three</h3>
+        </div>
+      </div>
+
+       <div class="item">
+        <img src="images/img1.jpg" alt="" style="width:900px;height: 400px;margin: auto;">
+        <div class="carousel-caption">
+          <h3>Caption Four</h3>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div><br>
+
+  <div class="row">
+    <div class="ev col-lg-4">
+      <div class="events col-lg-8">
+        <center><h3 style="margin-top: 10px;">EVENTS</h3></center>
+      </div>
+      <div class="eventlist col-lg-12">
+        <i class="fa fa-calendar-o"></i><h3>OCT 31, 2018</h3>
+        <span>New Admission starts</span><br>
+        <i class="fa fa-calendar-o"></i><h3>DEC 26, 2017</h3>
+        <span>12th Convocation Function</span><br>
+        <i class="fa fa-calendar-o"></i><h3>SEP 15, 2017</h3>
+        <span>Silver Jublee Celebration</span><br>
       </div>
     </div>
-  </div>
- <div class="content">
-<div class="slideshow-container">
-
-  <div class="mySlides fade1">
-  <div class="numbertext">1 / 4</div>
-  <img src="images/pic1.jpeg" style="width:100%" id="img1">
-  <div class="text"><h3><b>Caption Text</b></h3></div>
-  </div>
-
-  <div class="mySlides fade1">
-  <div class="numbertext">2 / 4</div>
-  <img src="images/pic2.jpeg" style="width:100%" id="img2">
-  <div class="text"><h3><b>Caption Two</b></h3></div>
-  </div>
-
-  <div class="mySlides fade1">
-  <div class="numbertext">3 / 4</div>
-  <img src="images/img2.jpg" style="width:100%" id="img3">
-  <div class="text"><h3><b>Caption Three</b></h3></div>
-  </div>
-
-  <div class="mySlides fade1">
-  <div class="numbertext">4 / 4</div>
-  <img src="images/img1.jpg" style="width:100%" id="img4">
-  <div class="text"><h3><b>Caption Four</b></h3></div>
-  </div>
-
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span>
-</div>
-  <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-    showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-    showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-  </script>
-
-<div class="academics form-control">
-	<center><h1><u>ACADEMICS</u></h1></center><br>
-  <div id="acd">
-  <span id="s01">
-    Established in March, 1987, The Nalanda Open University, is the only university in the state of Bihar, meant for imparting, learninng exclusively through the system of Distance Education.<br>
-    The University was established by an Ordinance Pronulgated by the Government of Bihar.<br>
-    Later, Nalanda Open University Act, 1995, was passed by Bihar Legislature, replacing the Ordinance and the University came under the authority and jurisdiction of the new Act automatically.<br>
-  </span>
-  </div><br><br><br>
-  <br><br><br>
-	<div class="more">
-		<center><h3><a href="#">Learn More</a></h3></center>
-	</div>
-</div>
-
-<div class="events form-control">
-	 <center><h1><u>EVENTS</u></h1></center>
-    <div class="eventlist">
-      <i class="fa fa-calendar-o"></i><h3>OCT 31, 2018</h3>
-      <span>New Admission starts</span><br>
-      <i class="fa fa-calendar-o"></i><h3>DEC 26, 2017</h3>
-      <span>12th Convocation Function</span><br>
-      <i class="fa fa-calendar-o"></i><h3>SEP 15, 2017</h3>
-      <span>Silver Jublee Celebration</span><br>
+    <div class="col-lg-8">
+      <div class="academics col-lg-5">
+        <center><h3 style="margin-top: 10px;">ACADEMICS</h3></center>
+      </div>
+      <p style="font-size: 20px;font-family: cursive;text-align: justify;">Established in March, 1987, The Nalanda Open University, is the only university in the state of Bihar, meant for imparting, learninng exclusively through the system of Distance Education.<br>
+      The University was established by an Ordinance Pronulgated by the Government of Bihar.<br>
+      Later, Nalanda Open University Act, 1995, was passed by Bihar Legislature, replacing the Ordinance and the University came under the authority and jurisdiction of the new Act automatically.<br></p>
     </div>
-	   <div class="more">
-		    <center><h3><a href="#">All Events</a></h3></center>
-	   </div>
+  </div>
 </div>
 
-</div>
-
-<div class="footer sticky">
-  <center>
-    <table>
-    <tr>
-      <th>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li>RTI</li>
-          <li><a href="files/Nalanda%20Open%20University%20Act.pdf">NOU ACT</a></li>
-          <li><a href="terms.html">Terms & Conditions</a></li>
-          <li><a href="privacyPolicy.html">Privacy Policy</a></li>
-          <li><a href="hyperlinkPolicy.html">HyperLink Policy</a></li>
-          <li><a href="alumni.html">Alumni</a></li>
-          <li><a href="downloads.html">Downloads</a></li>
-          <li><a href="http://www.sakshat.ac.in" target="_blank">NME-ICT Project</a></li>
-        </ul>
-      </th>
-    </tr>
-  </table>
-  <p>© 2011-2014 NALANDA Open University. All rights reserved</p>
-  </center>
-</div>
+ <div class="footer sticky container-fluid">
+    <center>
+      <table>
+      <tr>
+        <th>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="schools.html">Schools</a></li>
+            <li><a href="files/Nalanda%20Open%20University%20Act.pdf">NOU ACT</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+            <li><a href="hyperlinkPolicy.html">HyperLink Policy</a></li>
+            <li><a href="alumni.html">Alumni</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="http://www.sakshat.ac.in" target="_blank">NME-ICT Project</a></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+    <p>© 2011-2014 NALANDA Open University. All rights reserved</p>
+    </center>
+  </div>
 
 </body>
 </html>
